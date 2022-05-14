@@ -29,6 +29,7 @@
         android:inputType="textWebEmailAddress|textPersonName"
         android:selectAllOnFocus="false"
         android:singleLine="false"
+
         android:text="exemplo@exemplo.com"
         android:textAlignment="viewStart"
         android:textAllCaps="false"
