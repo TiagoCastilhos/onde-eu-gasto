@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="350dp"
+    android:clickable="true"
+    tools:context=".MapFilterFragment"
+    android:background="@drawable/top_corner_shape"
+    android:layout_gravity="bottom"
+    >
+
+    <GridLayout
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:rowCount="3"
+        android:columnCount="2"
+        android:padding="10dp"
+        >
+
+        <EditText
+            android:id="@+id/initialDateFilter"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:ems="8"
+            android:inputType="date"
+            android:hint="@string/initial_date"/>
+
+        <EditText
+            android:id="@+id/endDateFilter"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:ems="8"
+            android:inputType="date"
+            android:hint="@string/end_date"/>
+
+        <EditText
+            android:id="@+id/yearField"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="15dp"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:ems="8"
+            android:inputType="number"
+            android:hint="@string/year"/>
+
+        <EditText
+            android:id="@+id/monthField"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="25dp"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:ems="8"
+            android:inputType="number"
+            android:hint="@string/month"/>
+
+        <Button
+            android:id="@+id/cancelButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="2"
+            android:ems="9"
+            android:layout_column="0"
+            android:text="@string/cancel"
+            android:layout_gravity="center"
+            android:layout_marginBottom="30dp" />
+
+        <Button
+            android:id="@+id/confirmButton"
+            android:layout_height="wrap_content"
+            android:layout_row="2"
+            android:ems="9"
+            android:layout_column="1"
+            android:text="@string/confirm"
+            android:layout_gravity="center"
+            android:layout_marginBottom="30dp" />
+
+    </GridLayout>
+
+</FrameLayout>

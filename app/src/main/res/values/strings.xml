@@ -2,4 +2,12 @@
     <string name="app_name">OndeEuGasto</string>
     <string name="map">Mapa</string>
     <string name="dashboard">Dashboard</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="initial_date">Data Inicial</string>
+    <string name="end_date">Data Final</string>
+    <string name="year">Ano</string>
+    <string name="month">Mês</string>
+    <string name="cancel">Cancelar</string>
+    <string name="confirm">Confirmar</string>
 </resources>

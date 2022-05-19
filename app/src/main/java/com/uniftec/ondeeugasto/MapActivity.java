@@ -2,10 +2,14 @@ package com.uniftec.ondeeugasto;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
+import androidx.fragment.app.FragmentManager;
 
 import android.Manifest;
+import android.app.Fragment;
+import android.app.FragmentTransaction;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
+import android.view.View;
 
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.MapView;
@@ -52,6 +56,18 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
         mMapView.onSaveInstanceState(mapViewBundle);
     }
 
+    public void onFilterButtonClick(View v) {
+        FragmentManager fragmentManager = getSupportFragmentManager();
+
+        if (fragmentManager.getFragments().isEmpty()) {
+            fragmentManager
+                    .beginTransaction()
+                    .setReorderingAllowed(true)
+                    .add(R.id.map, MapFilterFragment.class, null)
+                    .commit();
+        }
+    }
+
     @Override
     protected void onResume() {
         super.onResume();
@@ -74,7 +90,7 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
     public void onMapReady(GoogleMap map) {
         if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
             String[] permissions = new String[1];
-            permissions[0] = Manifest.permission.ACCESS_COARSE_LOCATION;
+            permissions[0] = Manifest.permission.ACCESS_FINE_LOCATION;
             requestPermissions(permissions, 1);
             return;
         }
