@@ -81,7 +81,8 @@
             android:layout_column="1"
             android:text="@string/confirm"
             android:layout_gravity="center"
-            android:layout_marginBottom="30dp" />
+            android:layout_marginBottom="30dp"
+            />
 
     </GridLayout>
 

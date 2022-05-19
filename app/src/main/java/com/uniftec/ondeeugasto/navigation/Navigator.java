@@ -4,6 +4,7 @@ import android.content.Intent;
 import androidx.appcompat.app.AppCompatActivity;
 import com.google.android.material.bottomappbar.BottomAppBar;
 import com.uniftec.ondeeugasto.DashboardActivity;
+import com.uniftec.ondeeugasto.LoginActivity;
 import com.uniftec.ondeeugasto.MapActivity;
 import com.uniftec.ondeeugasto.R;
 
@@ -26,6 +27,10 @@ public class Navigator {
                 return true;
             case R.id.map:
                 intent = new Intent(caller, MapActivity.class);
+                caller.startActivity(intent);
+                return true;
+            case R.id.login:
+                intent = new Intent(caller, LoginActivity.class);
                 caller.startActivity(intent);
                 return true;
         }
