@@ -31,8 +31,7 @@
         android:inputType="textWebEmailAddress|textPersonName"
         android:selectAllOnFocus="false"
         android:singleLine="false"
-
-        android:text="exemplo@exemplo.com"
+        android:hint="exemplo@exemplo.com"
         android:textAlignment="viewStart"
         android:textAllCaps="false"
         app:layout_constraintEnd_toEndOf="parent"
