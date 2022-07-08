@@ -12,13 +12,13 @@ Trabalho desenvolvido durante a disciplina de Programação para Sistemas móvei
 
 ##  Desenvolvimento
 
-- [ ] Tela de login
-- [ ] Tela de cadastro
-- [ ] Home
-- [ ] Cadastro de gasto
-- [ ] Mapa
-- [ ] Mapa com filtro aplicado
-- [ ] Mapa com filtro aberto
+- [x] Tela de login
+- [x] Tela de cadastro
+- [x] Home
+- [x] Cadastro de gasto
+- [x] Mapa
+- [x] Mapa com filtro aplicado
+- [x] Mapa com filtro aberto
 
 ##  Autores
 
