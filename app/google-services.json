@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "522148583212",
+    "project_id": "onde-eu-gasto",
+    "storage_bucket": "onde-eu-gasto.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:522148583212:android:5886e03d5c6c7e998c7e89",
+        "android_client_info": {
+          "package_name": "com.uniftec.ondeeugasto"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "522148583212-tdk1f10gmsbhi5c4jt0cd36o36ov7n86.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDHCrl1mS2uYIVjqEzBxScbzyUMOl7jYX8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "522148583212-tdk1f10gmsbhi5c4jt0cd36o36ov7n86.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

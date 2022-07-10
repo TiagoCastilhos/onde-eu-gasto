@@ -31,7 +31,8 @@
         android:hint="exemplo@exemplo.com"
         android:inputType="textWebEmailAddress|textPersonName"
         android:selectAllOnFocus="false"
-
+        android:singleLine="false"
+        android:hint="exemplo@exemplo.com"
         android:singleLine="false"
         android:textAlignment="viewStart"
         android:textAllCaps="false"
